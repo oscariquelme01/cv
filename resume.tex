@@ -1,0 +1,228 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Oscar Riquelme} \\ \vspace{6pt}
+    {\Large Fullstack Software Engineer} \\ \vspace{4pt}
+    \small \raisebox{-0.1\height}\faPhone\ +34601304460 ~ \href{mailto:x@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{oscariquelmejato01@gmail.com}} ~ 
+    \href{https://linkedin.com/in/oscar-riquelme-jato/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/oscar-riquelme-jato}}  ~
+    \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/oscariquelme01}}
+    \vspace{-2pt}
+\end{center}
+
+
+%-----------EXPERIENCE-----------
+\section{\Large Experience}
+  \resumeSubHeadingListStart
+
+    % ORENES
+    \resumeSubheading
+      {Orenes Group}{June 2022 -- current date}
+      {Full Stack Developer}{Madrid, Spain}
+      \resumeItemListStart
+        \resumeItem{Designed and developed a new microservices architecture from scratch that marginally improved scalability and modularity while greatly reducing technical debt.}
+        \resumeItem{Developed a service to resolve any type of feature for any slot game, simplifying backend development and maintanability by standarizing the API all games used to a single API instead of an API per game.}
+        \resumeItem{Built frontends for various Slot games in Phaser3, HTML and CSS.}
+        \resumeItem{Refactored the history page for the player's games to a more modern and shophisticated solution using Vue.}
+      \resumeItemListEnd
+
+    
+    % INFONIS
+    \resumeSubheading
+      {Infonis S.A.}{Feb 2023 -- September 2024}
+      {Freelance Full Stack Developer}{Madrid, Spain}
+      \resumeItemListStart
+        \resumeItem{Implemented an internal report generation tool to replace SAP Crystal Reports.}
+        \resumeItem{Configured SSO using Microsoft's Active Directory to standarize login for the various products we offered.}
+        \resumeItem{Updated a massive react project from class based to functional components, updating all the dependencies.}
+        \resumeItem{Rebuilt an internal tool to configure and manage the CRM databases and frontends, enabling customization per client.}
+    \resumeItemListEnd
+
+    % DELONIA
+    \resumeSubheading
+      {Delonia Software}{April 2021 -- June 2021}
+      {Intern Frontend Developer}{Madrid, Spain}
+      \resumeItemListStart
+      \resumeItem{Built numerous features for applications mainly using React and TailwindCss.}
+      \resumeItem{Selected the technologies and handled the implementation for an internal software management solution for a company.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-8pt}
+
+%-----------PROJECTS-----------
+\section{\Large Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Personal Development Enviroment} $|$ \emph{Neovim, NixOS, Hyperland}}{January 2024}
+          \resumeItemListStart
+            \resumeItem{Configured and developed a Neovim setup to speed up code editing and inspection hundredfold.}
+            \resumeItem{Built many Hyperland and waybar scripts to improve the navigation and aesthetics while developing.}
+            \resumeItem{Switched from Archlinux to NixOS to implement a declarative operating system configuration using Nix and Home Manager and allow reproducible builds with rollbacks.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+      \resumeProjectHeading
+          {\textbf{Chainlink Autumn Hackathon -- Casino Liquidity Automation } $|$ \emph{Solidity, Phaser 3, React}}{October 2022}
+          \resumeItemListStart
+            \resumeItem{Built an on-chain casino that allowed users to provide the casino with liquidity by staking their coins using a vault smart contract.}
+            \resumeItem{Used Chainlink RNG service to provide on-chain cryptographically secure random numbers.}
+            \resumeItem{Acted as a teamlead for a globally distributed team of developers, defining the project limitations and asigning tasks.}
+            \resumeItem{Implemented a roulette game in phaser 3 that integrated with the roulette logic and vault smart contracts.}
+          \resumeItemListEnd 
+          \vspace{-2pt}
+    \resumeSubHeadingListEnd
+\vspace{-8pt}
+
+
+%-----------EDUCATION-----------
+\section{\Large Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Universidad Autonoma de Madrid}{Sep. 2019 -- June 2023}
+      {Bachelor degree in Computer Science}{Madrid, Spain}
+  \resumeSubHeadingListEnd\vspace{-4pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{\Large Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Javascript/Typescript, Java, Python, C, HTML/CSS, SQL, Shell Scripting, Nix, Lua} \\
+     \textbf{Developer Tools}{: Neovim, NixOS/Linux, Git, Jira, Confluence, Bitbucket} \\
+     \textbf{Technologies/Frameworks}{: React, Vue, Docker, Express, Redis, Redux, NextJS, OpenAPI, Phaser 3, FastApi, Flask} \\
+    }}
+     \textbf{Currently learning}{: Rust, Tokyo, Kubernettes, Self-Hosting, OpenCV} \\
+ \end{itemize}
+ \vspace{-10pt}
+
+
+%-----------INTERESTS---------------
+ \section{\Large Interests and Hobbies}
+  \faDumbbell\hspace{1pt} I enjoy being really active, playing all kind of sports and training strength and endurance on a regular basis.\\
+  \hspace{3pt}\faChessKnight\hspace{3pt} I enjoy deterministic problem-solving games like chess, especially when played in person.\\
+  \faMicrochip\hspace{3pt} I love technology and tinkering with hardware, building things like custom split keyboards and pc cases.
+
+
+\end{document}
