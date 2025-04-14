@@ -1,0 +1,221 @@
+%-------------------------
+% Curriculum Vitae en Latex
+% Autor: Jake Gutierrez
+% Basado en: https://github.com/sb2nov/resume
+% Licencia: MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[spanish]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------OPCIONES DE FUENTE----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % limpiar todos los campos
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Ajustar márgenes
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Formato de secciones
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Asegurar PDF legible por máquinas/ATS
+\pdfgentounicode=1
+
+%-------------------------
+% Comandos personalizados
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  EL CURRICULUM COMIENZA AQUÍ  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------ENCABEZADO----------
+\begin{center}
+    {\Huge \scshape Oscar Riquelme} \\ \vspace{6pt}
+    {\Large Ingeniero Full Stack} \\ \vspace{4pt}
+    \small \raisebox{-0.1\height}\faPhone\ +34601304460 ~ \href{mailto:x@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{oscariquelmejato01@gmail.com}} ~ 
+    \href{https://linkedin.com/in/oscar-riquelme-jato/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/oscar-riquelme-jato}}  ~
+    \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/oscariquelme01}}
+    \vspace{-2pt}
+\end{center}
+
+
+%-----------EXPERIENCIA-----------
+\section{\Large Experiencia}
+  \resumeSubHeadingListStart
+
+    % ORENES
+    \resumeSubheading
+      {Grupo Orenes}{Junio 2022 -- actualidad}
+      {Desarrollador Full Stack Senior}{Madrid, España}
+      \resumeItemListStart
+        \resumeItem{Diseño de una arquitectura de microservicios que mejoró la escalabilidad y redujo significativamente la deuda técnica.}
+        \resumeItem{Desarrollo de un servicio unificado para resolver funcionalidades de juegos, estandarizando a una única API en lugar de múltiples.}
+        \resumeItem{Documentación del proyecto con OpenAPI y swaggerUI, creando un motor yaml custom para habilitar imports y live-reloading.}
+        \resumeItem{Desarrollo de frontends para juegos usando Phaser3, HTML y CSS.}
+        \resumeItem{Refactorización de la página de historial a una solución moderna con Vue.}
+      \resumeItemListEnd
+
+    
+    % INFONIS
+    \resumeSubheading
+      {Infonis S.A.}{Feb 2023 -- Sept 2024}
+      {Desarrollador Full Stack Freelance}{Madrid, España}
+      \resumeItemListStart
+        \resumeItem{Implementación de una herramienta interna para reemplazar SAP Crystal Reports.}
+        \resumeItem{Configuración de SSO con Active Directory para estandarizar acceso a múltiples productos.}
+        \resumeItem{Actualización de un proyecto masivo de React de componentes de clase a funcionales y actualización de dependencias.}
+        \resumeItem{Refactorización de una herramienta para gestionar bases de datos y frontends CRM con personalización por cliente.}
+    \resumeItemListEnd
+
+    % DELONIA
+    \resumeSubheading
+      {Delonia Software}{Abril 2021 -- Junio 2021}
+      {Desarrollador Frontend en Prácticas}{Madrid, España}
+      \resumeItemListStart
+      \resumeItem{Desarrollo de funcionalidades para aplicaciones con React y TailwindCss.}
+      \resumeItem{Selección de tecnologías e implementación de una  solución de gestión de software interna.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-8pt}
+
+%-----------PROYECTOS-----------
+\section{\Large Proyectos}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Entorno Desarrollo Personal} $|$ \emph{Neovim, NixOS, Hyperland}}{Enero 2024}
+          \resumeItemListStart
+            \resumeItem{Configurción de Neovim para acelerar la edición e inspección de código.}
+            \resumeItem{Creación de scripts de Hyperland y waybar para mejorar la navegación y estética del sistema operativo.}
+            \resumeItem{Migración a NixOS para tener una configuración declarativa y compilaciones reproducibles con rollbacks.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+      \resumeProjectHeading
+          {\textbf{Chainlink Hackathon -- Liquidez de Casino} $|$ \emph{Solidity, Phaser 3, React}}{Oct 2022}
+          \resumeItemListStart
+            \resumeItem{Desarrollo de un casino on-chain que permite a usuarios aportar liquidez mediante staking.}
+            \resumeItem{Integración del servicio de Chainlink RNG para números aleatorios criptográficamente seguros.}
+            \resumeItem{Lideré el equipo global de desarrolladores, definiendo el alcance del proyecto y asignando las tareas a cada desarrollador.}
+            \resumeItem{Implementación de juegos de ruleta en Phaser 3 integrando con los smart contracts desarrollados.}
+          \resumeItemListEnd 
+          \vspace{-2pt}
+    \resumeSubHeadingListEnd
+\vspace{-8pt}
+
+
+%-----------EDUCACIÓN-----------
+\section{\Large Formación}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Universidad Autónoma de Madrid}{Sept 2019 -- Junio 2023}
+      {Grado en Ingeniería Informática}{Madrid, España}
+  \resumeSubHeadingListEnd\vspace{-4pt}
+
+%-----------HABILIDADES-----------
+\section{\Large Habilidades Técnicas}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Lenguajes}{: Javascript/Typescript, Java, Python, C, HTML/CSS, SQL, Shell, Nix, Lua} \\
+     \textbf{Herramientas}{: Neovim, NixOS/Linux, Git, Jira, Confluence, Bitbucket} \\
+     \textbf{Tecnologías}{: React, Vue, Docker, Express, Redis, Redux, NextJS, OpenAPI, Phaser 3, FastApi, Flask} \\
+    }}
+     \textbf{Aprendiendo}{: Rust, Tokyo, Kubernetes, Self-Hosting, OpenCV} \\
+ \end{itemize}
+ \vspace{-10pt}
+
+
+%-----------SOBRE MÍ---------------
+ \section{\Large Sobre mí}
+  Ingeniero informático apasionado por el desarrollo full stack y la tecnología en general. Mis principales intereses son el desarrollo web full stack, la arquitectura de software y los sistemas Unix. Actualmente estoy buscando un entorno para perfeccionar mis habilidades y construir proyectos web full stack innovadores.
+
+\end{document}
