@@ -1,12 +1,10 @@
 %-------------------------
-% Curriculum Vitae en Latex
-% Autor: Jake Gutierrez
-% Basado en: https://github.com/sb2nov/resume
-% Licencia: MIT
+% Resume in Latex
+% Author : Oscar Riquelme
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
 %------------------------
-
 \documentclass[letterpaper,11pt]{article}
-
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -16,68 +14,57 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
-\usepackage[spanish]{babel}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage{tabularx}
 \usepackage{fontawesome5}
 \usepackage{multicol}
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
 \input{glyphtounicode}
-
-
-%----------OPCIONES DE FUENTE----------
+%----------FONT OPTIONS----------
 % sans-serif
 % \usepackage[sfdefault]{FiraSans}
 % \usepackage[sfdefault]{roboto}
 % \usepackage[sfdefault]{noto-sans}
 % \usepackage[default]{sourcesanspro}
-
 % serif
 % \usepackage{CormorantGaramond}
 % \usepackage{charter}
-
-
 \pagestyle{fancy}
-\fancyhf{} % limpiar todos los campos
+\fancyhf{} % clear all header and footer fields
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-
-% Ajustar márgenes
+% Adjust margins
 \addtolength{\oddsidemargin}{-0.6in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1.19in}
 \addtolength{\topmargin}{-.7in}
 \addtolength{\textheight}{1.4in}
-
 \urlstyle{same}
-
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
-
-% Formato de secciones
+% Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large\bfseries
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
-% Asegurar PDF legible por máquinas/ATS
+% Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
-
 %-------------------------
-% Comandos personalizados
+% Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
     {#1 \vspace{-2pt}}
   }
 }
-
 \newcommand{\classesList}[4]{
     \item\small{
         {#1 #2 #3 #4 \vspace{-2pt}}
   }
 }
-
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -85,137 +72,122 @@
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
-
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
-
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & \textbf{\small #2}\\
     \end{tabular*}\vspace{-7pt}
 }
-
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
 %-------------------------------------------
-%%%%%%  EL CURRICULUM COMIENZA AQUÍ  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-
-%----------ENCABEZADO----------
+%----------HEADING----------
 \begin{center}
     {\Huge \scshape Oscar Riquelme} \\ \vspace{6pt}
-    {\Large Ingeniero Full Stack} \\ \vspace{4pt}
-    \small \raisebox{-0.1\height}\faPhone\ +34601304460 ~ \href{mailto:x@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{oscariquelmejato01@gmail.com}} ~ 
+    {\Large Ingeniero de Software Senior Full Stack} \\ \vspace{4pt}
+    \small \raisebox{-0.1\height}\faPhone\ +34601304460 ~ \href{mailto:oscariquelmejato@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{oscariquelmejato@gmail.com}} ~ 
     \href{https://linkedin.com/in/oscar-riquelme-jato/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/oscar-riquelme-jato}}  ~
-    \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/oscariquelme01}}
+    \href{https://github.com/oscariquelme01}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/oscariquelme01}}
     \vspace{-2pt}
 \end{center}
-
-
 %-----------EXPERIENCIA-----------
 \section{\Large Experiencia}
   \resumeSubHeadingListStart
-
+    % YOUSHIFT
+    \resumeSubheading
+      {Youshift - YCombinator W25}{Marzo 2026 -- Actualidad}
+      {Desarrollador Senior Full Stack $|$ TypeScript, Node.js, Vue, Nuxt, TypeORM, Nest.js}{Madrid, España}
+      \resumeItemListStart
+        \resumeItem{Implementación de flujos OAuth 2.0 para Microsoft y Salesforce.}
+        \resumeItem{Integración con Intercom para soporte al cliente.}
+        \resumeItem{Implementación y documentación de una API ortogonal a la comunicación tRPC para integraciones con terceros.}
+        \resumeItem{Rediseño de las herramientas de administración para optimizar las operaciones de negocio y la gestión de grupos.}
+      \resumeItemListEnd
+    % ETHERNODES
+    \resumeSubheading
+      {Ethernodes - Alphagrowth}{Octubre 2025 -- Marzo 2026}
+      {Desarrollador Senior Full Stack $|$ TypeScript, Node.js, Vue, Nuxt, TypeORM, Nest.js}{Madrid, España}
+      \resumeItemListStart
+        \resumeItem{Implementación de 2FA y medidas de seguridad adicionales para reforzar la autenticación y proteger las cuentas de usuario.}
+        \resumeItem{Integración de múltiples protocolos de staking, incluyendo Lido CSM, Stader y SSV Network.}
+        \resumeItem{Refactorización de los servicios principales del backend en componentes modulares y flexibles para adaptarse a los requisitos cambiantes del negocio.}
+        \resumeItem{Rediseño del frontend con una interfaz moderna y cuidada para mejorar la experiencia de usuario y la interacción.}
+      \resumeItemListEnd
+    % CAJA RURAL
+    \resumeSubheading
+      {RSI - Caja Rural}{Mayo 2025 -- Agosto 2025}
+      {Desarrollador Senior Full Stack $|$ React, TypeScript, Node, Vue, Electron}{Madrid, España}
+      \resumeItemListStart
+      \resumeItem{Implementación de la nueva legislación española sobre accesibilidad en cajeros automáticos utilizando la API de voz de Windows, Electron, TypeScript, React y Vue.}
+      \resumeItem{Implementación de un nuevo módulo para la ofuscación del PAN y el cumplimiento de la normativa PCI en TypeScript y Node.}
+    \resumeItemListEnd
     % ORENES
     \resumeSubheading
-      {Grupo Orenes}{Junio 2022 -- actualidad}
-      {Desarrollador Full Stack Senior}{Madrid, España}
+      {Grupo Orenes}{Septiembre 2022 -- Mayo 2025}
+      {Desarrollador Full Stack $|$ React, TypeScript, Node, Express, Vue, Java, Microservicios}{Madrid, España}
       \resumeItemListStart
-        \resumeItem{Diseño de una arquitectura de microservicios que mejoró la escalabilidad y redujo significativamente la deuda técnica.}
-        \resumeItem{Desarrollo de un servicio unificado para resolver funcionalidades de juegos, estandarizando a una única API en lugar de múltiples.}
-        \resumeItem{Documentación del proyecto con OpenAPI y swaggerUI, creando un motor yaml custom para habilitar imports y live-reloading.}
-        \resumeItem{Desarrollo de frontends para juegos usando Phaser3, HTML y CSS.}
-        \resumeItem{Refactorización de la página de historial a una solución moderna con Vue.}
+        \resumeItem{Diseño y desarrollo de una nueva arquitectura de microservicios en TypeScript (Node y Express) que mejoró la escalabilidad y la modularidad, eliminando deuda técnica.}
+        \resumeItem{Desarrollo de un servicio en TypeScript (Node y Express) capaz de resolver cualquier tipo de funcionalidad para cualquier juego de tragaperras, simplificando el desarrollo y la mantenibilidad del backend mediante una única API para todos los juegos.}
+        \resumeItem{Documentación de todo el proyecto mediante la especificación OpenAPI y Swagger UI, construyendo un motor YAML personalizado que permitía importaciones, modularización y recarga en caliente para mejorar la experiencia de desarrollo.}
+        \resumeItem{Desarrollo de frontends y backends para diversos juegos de tragaperras en Phaser3, React, Java, HTML y CSS.}
+        \resumeItem{Refactorización de la página de historial de partidas del jugador hacia una solución más moderna y sofisticada usando Vue.}
       \resumeItemListEnd
-
     
     % INFONIS
     \resumeSubheading
-      {Infonis S.A.}{Feb 2023 -- Sept 2024}
-      {Desarrollador Full Stack Freelance}{Madrid, España}
+      {Infonis S.A.}{Febrero 2023 -- Septiembre 2024}
+      {Desarrollador Full Stack Freelance $|$ React, .NET, TypeScript, Node}{Madrid, España}
       \resumeItemListStart
-        \resumeItem{Implementación de una herramienta interna para reemplazar SAP Crystal Reports.}
-        \resumeItem{Configuración de SSO con Active Directory para estandarizar acceso a múltiples productos.}
-        \resumeItem{Actualización de un proyecto masivo de React de componentes de clase a funcionales y actualización de dependencias.}
-        \resumeItem{Refactorización de una herramienta para gestionar bases de datos y frontends CRM con personalización por cliente.}
-    \resumeItemListEnd
-
-    % DELONIA
-    \resumeSubheading
-      {Delonia Software}{Abril 2021 -- Junio 2021}
-      {Desarrollador Frontend en Prácticas}{Madrid, España}
-      \resumeItemListStart
-      \resumeItem{Desarrollo de funcionalidades para aplicaciones con React y TailwindCss.}
-      \resumeItem{Selección de tecnologías e implementación de una  solución de gestión de software interna.}
+        \resumeItem{Implementación de una herramienta interna de generación de informes en React y .NET para reemplazar SAP Crystal Reports.}
+        \resumeItem{Configuración de SSO mediante Active Directory de Microsoft para estandarizar el inicio de sesión en los distintos productos ofrecidos.}
+        \resumeItem{Migración de un proyecto extenso de React de componentes basados en clases a componentes funcionales, actualizando todas las dependencias.}
+        \resumeItem{Reconstrucción de una herramienta interna en React para configurar y gestionar las bases de datos y los frontends del CRM, permitiendo la personalización por cliente.}
     \resumeItemListEnd
     
   \resumeSubHeadingListEnd
 \vspace{-8pt}
-
 %-----------PROYECTOS-----------
 \section{\Large Proyectos}
-    \vspace{-5pt}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Entorno Desarrollo Personal} $|$ \emph{Neovim, NixOS, Hyperland}}{Enero 2024}
+          {\textbf{WIMM (Where is my money) - Panel financiero aumentado} $|$ \emph{Nest, React, PostgreSQL}}{Marzo 2026}
           \resumeItemListStart
-            \resumeItem{Configurción de Neovim para acelerar la edición e inspección de código.}
-            \resumeItem{Creación de scripts de Hyperland y waybar para mejorar la navegación y estética del sistema operativo.}
-            \resumeItem{Migración a NixOS para tener una configuración declarativa y compilaciones reproducibles con rollbacks.}
+            \resumeItem{Desarrollo de una API que se conecta directamente a cualquier cuenta bancaria europea a través de un proveedor de open banking.}
+            \resumeItem{Uso del sistema de diseño Shadcn con TailwindCSS para crear componentes reutilizables personalizados.}
+            \resumeItem{Implementación de categorización agéntica para las transacciones entrantes.}
+            \resumeItem{Filtrado inteligente de transacciones y paneles de analítica.}
           \resumeItemListEnd
-          \vspace{-13pt}
-
-      \resumeProjectHeading
-          {\textbf{Chainlink Hackathon -- Liquidez de Casino} $|$ \emph{Solidity, Phaser 3, React}}{Oct 2022}
-          \resumeItemListStart
-            \resumeItem{Desarrollo de un casino on-chain que permite a usuarios aportar liquidez mediante staking.}
-            \resumeItem{Integración del servicio de Chainlink RNG para números aleatorios criptográficamente seguros.}
-            \resumeItem{Lideré el equipo global de desarrolladores, definiendo el alcance del proyecto y asignando las tareas a cada desarrollador.}
-            \resumeItem{Implementación de juegos de ruleta en Phaser 3 integrando con los smart contracts desarrollados.}
-          \resumeItemListEnd 
-          \vspace{-2pt}
     \resumeSubHeadingListEnd
 \vspace{-8pt}
-
-
 %-----------EDUCACIÓN-----------
-\section{\Large Formación}
+\section{\Large Educación}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Universidad Autónoma de Madrid}{Sept 2019 -- Junio 2023}
+      {Universidad Autónoma de Madrid}{Sep. 2019 -- Junio 2023}
       {Grado en Ingeniería Informática}{Madrid, España}
-  \resumeSubHeadingListEnd\vspace{-4pt}
-
-%-----------HABILIDADES-----------
-\section{\Large Habilidades Técnicas}
+  \resumeSubHeadingListEnd
+\vspace{-4pt}
+%----------- HABILIDADES-----------
+\section{\Large Habilidades}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Lenguajes}{: Javascript/Typescript, Java, Python, C, HTML/CSS, SQL, Shell, Nix, Lua} \\
-     \textbf{Herramientas}{: Neovim, NixOS/Linux, Git, Jira, Confluence, Bitbucket} \\
-     \textbf{Tecnologías}{: React, Vue, Docker, Express, Redis, Redux, NextJS, OpenAPI, Phaser 3, FastApi, Flask} \\
+     \textbf{Lenguajes de programación}{: JavaScript/TypeScript, ecosistema Node, HTML/CSS, SQL, Shell Scripting, Python} \\
+     \textbf{Frameworks/Librerías}{: React, Express, Fastify, Nest.js, Redis, Redux, Next.js, Vue, TailwindCSS} \\
+     \textbf{Herramientas de desarrollo}{: Neovim, NixOS/Linux, Git, Jira, Confluence, Bitbucket, AWS, herramientas de CI/CD, Figma, Docker} \\
+     \textbf{Idiomas}{: Español (nativo), Inglés (C1)} \\
     }}
-     \textbf{Aprendiendo}{: Rust, Tokyo, Kubernetes, Self-Hosting, OpenCV} \\
  \end{itemize}
- \vspace{-10pt}
-
-
-%-----------SOBRE MÍ---------------
- \section{\Large Sobre mí}
-  Ingeniero informático apasionado por el desarrollo full stack y la tecnología en general. Mis principales intereses son el desarrollo web full stack, la arquitectura de software y los sistemas Unix. Actualmente estoy buscando un entorno para perfeccionar mis habilidades y construir proyectos web full stack innovadores.
-
 \end{document}
