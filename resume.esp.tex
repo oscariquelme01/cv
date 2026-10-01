@@ -84,12 +84,21 @@
       \small#1 & \textbf{\small #2}\\
     \end{tabular*}\vspace{-7pt}
 }
+\newcommand{\resumeContractHeading}[2]{
+    \vspace{4pt}
+    \hspace{0.3in}\begin{tabular*}{0.95\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeContractItem}[1]{\item\small{#1}}
+\newcommand{\resumeContractItemListStart}{\begin{itemize}[leftmargin=0.6in, rightmargin=0.1in, nosep]}
+\newcommand{\resumeContractItemListEnd}{\end{itemize}\vspace{-1pt}}
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0pt, parsep=0pt, topsep=2pt]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -97,7 +106,7 @@
 %----------HEADING----------
 \begin{center}
     {\Huge \scshape Oscar Riquelme} \\ \vspace{6pt}
-    {\Large Ingeniero de Software Senior Full Stack} \\ \vspace{4pt}
+    {\Large Ingeniero de Software Full Stack Senior} \\ \vspace{4pt}
     \small \raisebox{-0.1\height}\faPhone\ +34601304460 ~ \href{mailto:oscariquelmejato@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{oscariquelmejato@gmail.com}} ~ 
     \href{https://linkedin.com/in/oscar-riquelme-jato/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/oscar-riquelme-jato}}  ~
     \href{https://github.com/oscariquelme01}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/oscariquelme01}}
@@ -106,88 +115,87 @@
 %-----------EXPERIENCIA-----------
 \section{\Large Experiencia}
   \resumeSubHeadingListStart
-    % YOUSHIFT
+
+    % CONTRATOS INDEPENDIENTES
     \resumeSubheading
-      {Youshift - YCombinator W25}{Marzo 2026 -- Actualidad}
-      {Desarrollador Senior Full Stack $|$ TypeScript, Node.js, Vue, Nuxt, TypeORM, Nest.js}{Madrid, España}
+      {Ingeniero de Software Full Stack Freelance}{feb. 2023 -- actualidad}
+      {Proyectos seleccionados para clientes}{En remoto}
+
+      \resumeContractHeading
+          {\textbf{MasOrange} $|$ \emph{Desarrollador Full Stack -- Soporte N3}}{dic. 2025 -- actualidad}
+      \resumeContractItemListStart
+        \resumeContractItem{Soporte N3 y resolución de incidencias en producción dentro de un ecosistema de microservicios.}
+        \resumeContractItem{Desarrollo de soluciones internas para agilizar la operativa del equipo de gestión de averías.}
+        \resumeContractItem{Refactorización y refuerzo de la seguridad de un módulo encargado de controles de acceso sensibles.}
+        \resumeContractItem{Automatización de copias de seguridad para bases de datos sensibles actualizadas por varios microservicios.}
+      \resumeContractItemListEnd
+
+      \resumeContractHeading
+          {\textbf{YouShift - Y Combinator W25} $|$ \emph{Ingeniero Full Stack -- Equipo fundador}}{mar. 2026 -- jun. 2026}
+      \resumeContractItemListStart
+        \resumeContractItem{Implementación de flujos OAuth 2.0 para Microsoft y Salesforce e integración de Intercom en el proceso de atención al cliente.}
+        \resumeContractItem{Diseño y documentación de una API pública para terceros, complementaria a la API interna en tRPC.}
+        \resumeContractItem{Rediseño de herramientas internas de administración para agilizar la operativa y la gestión de grupos.}
+      \resumeContractItemListEnd
+
+      \resumeContractHeading
+          {\textbf{Infonis S.L.} $|$ \emph{Desarrollador Full Stack}}{feb. 2023 -- ago. 2024}
+      \resumeContractItemListStart
+        \resumeContractItem{Desarrollo de herramientas de informes y gestión del CRM con React y .NET para sustituir SAP Crystal Reports.}
+        \resumeContractItem{Configuración del inicio de sesión único (SSO) con Microsoft Active Directory para unificar el acceso a varios productos.}
+        \resumeContractItem{Migración de una aplicación de React 16 a React 18, conversión de componentes de clase a funcionales y modernización de dependencias y sistema de compilación.}
+      \resumeContractItemListEnd
+
+    % ALPHAGROWTH / ETHERNODES
+    \resumeSubheading
+      {AlphaGrowth - Ethernodes}{oct. 2025 -- mar. 2026}
+      {Desarrollador Full Stack Senior $|$ TypeScript, Node.js, Vue, Nuxt, TypeORM, Nest.js}{Madrid, España}
       \resumeItemListStart
-        \resumeItem{Implementación de flujos OAuth 2.0 para Microsoft y Salesforce.}
-        \resumeItem{Integración con Intercom para soporte al cliente.}
-        \resumeItem{Implementación y documentación de una API ortogonal a tRPC para integraciones con terceros.}
-        \resumeItem{Rediseño de las herramientas de administración para optimizar las operaciones de negocio y la gestión de grupos.}
+        \resumeItem{Implementación de 2FA y otras medidas de seguridad para reforzar la autenticación y proteger las cuentas de usuario.}
+        \resumeItem{Integración de varios protocolos de staking, entre ellos Lido CSM, Stader y SSV Network.}
+        \resumeItem{Modularización de los servicios principales del backend para facilitar su adaptación a nuevos requisitos de negocio.}
+        \resumeItem{Rediseño del frontend con una interfaz moderna y cuidada para mejorar la experiencia de usuario.}
       \resumeItemListEnd
-    % ETHERNODES
+    % SERQUO / CAJA RURAL
     \resumeSubheading
-      {Ethernodes - Alphagrowth}{Octubre 2025 -- Marzo 2026}
-      {Desarrollador Senior Full Stack $|$ TypeScript, Node.js, Vue, Nuxt, TypeORM, Nest.js}{Madrid, España}
+      {Serquo - Consultor para RSI / Caja Rural}{may. 2025 -- ago. 2025}
+      {Desarrollador Full Stack Senior $|$ React, TypeScript, Node.js, Vue, Electron}{Madrid, España}
       \resumeItemListStart
-        \resumeItem{Implementación de 2FA y medidas de seguridad adicionales para reforzar la autenticación.}
-        \resumeItem{Integración de múltiples protocolos de staking: Lido CSM, Stader y SSV Network.}
-        \resumeItem{Refactorización de los servicios principales del backend en componentes modulares y flexibles.}
-        \resumeItem{Rediseño del frontend con una interfaz moderna para mejorar la experiencia de usuario.}
+        \resumeItem{Adaptación del software de los cajeros a la normativa española de accesibilidad con la API de voz de Windows, Electron, TypeScript y React.}
+        \resumeItem{Desarrollo de módulos de registro y ofuscación del PAN conformes con PCI utilizando TypeScript y Node.js.}
       \resumeItemListEnd
-    % CAJA RURAL
-    \resumeSubheading
-      {RSI - Caja Rural}{Mayo 2025 -- Agosto 2025}
-      {Desarrollador Senior Full Stack $|$ React, TypeScript, Node, Vue, Electron}{Madrid, España}
-      \resumeItemListStart
-      \resumeItem{Implementación de la legislación española sobre accesibilidad en cajeros con la API de voz de Windows, Electron, TypeScript, React y Vue.}
-      \resumeItem{Implementación de un módulo de ofuscación del PAN y cumplimiento PCI en TypeScript y Node.}
-    \resumeItemListEnd
+
     % ORENES
     \resumeSubheading
-      {Grupo Orenes}{Septiembre 2022 -- Mayo 2025}
+      {Grupo Orenes}{oct. 2022 -- may. 2025}
       {Desarrollador Full Stack $|$ React, TypeScript, Node, Express, Vue, Java, Microservicios}{Madrid, España}
       \resumeItemListStart
-        \resumeItem{Diseño y desarrollo de una arquitectura de microservicios en TypeScript (Node y Express) que mejoró la escalabilidad y eliminó deuda técnica.}
-        \resumeItem{Servicio en TypeScript (Node y Express) que resuelve cualquier funcionalidad de cualquier juego de casino con una única API.}
-        \resumeItem{Documentación con OpenAPI y Swagger UI, con motor YAML personalizado que soporta importaciones, modularización y recarga en caliente.}
-        \resumeItem{Desarrollo de frontends y backends para diversos juegos de casino en Phaser3, React, Java, Springboot, HTML y CSS.}
-        \resumeItem{Refactorización de la página de historial de partidas a una solución más moderna usando Vue.}
+        \resumeItem{Diseño de una arquitectura de microservicios en TypeScript y Express para sustituir un backend Java heredado, mejorando la modularidad y reduciendo la deuda técnica.}
+        \resumeItem{Desarrollo de una API de orquestación capaz de gestionar la lógica de múltiples juegos de tipo slot.}
+        \resumeItem{Integración del backend con servicios internos e incorporación de pruebas unitarias y de integración.}
+        \resumeItem{Creación de un motor de documentación con OpenAPI y Swagger UI que admite importaciones, modularización y recarga en caliente.}
+        \resumeItem{Desarrollo de frontends y backends en Java para varios juegos, mejora de la librería compartida y reconstrucción con Vue del historial de partidas.}
       \resumeItemListEnd
     
-    % INFONIS
-    \resumeSubheading
-      {Infonis S.A.}{Febrero 2023 -- Septiembre 2024}
-      {Desarrollador Full Stack Freelance $|$ React, .NET, TypeScript, Node}{Madrid, España}
-      \resumeItemListStart
-        \resumeItem{Herramienta interna de generación de informes en React y .NET para reemplazar SAP Crystal Reports.}
-        \resumeItem{Configuración de SSO con Active Directory de Microsoft para estandarizar el inicio de sesión en los productos.}
-        \resumeItem{Migración de un proyecto extenso de React de componentes de clase a funcionales, actualizando todas las dependencias.}
-        \resumeItem{Reconstrucción de una herramienta interna en React para gestionar BBDD y frontends del CRM, con personalización por cliente.}
-    \resumeItemListEnd
-    
   \resumeSubHeadingListEnd
-\vspace{-8pt}
-%-----------PROYECTOS-----------
-\section{\Large Proyectos}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{WIMM (Where is my money) - Panel financiero aumentado} $|$ \emph{Nest, React, PostgreSQL}}{Marzo 2026}
-          \resumeItemListStart
-            \resumeItem{Desarrollo de una API que se conecta a cualquier cuenta bancaria europea mediante un proveedor de open banking.}
-            \resumeItem{Uso del sistema de diseño Shadcn con TailwindCSS para crear componentes reutilizables personalizados.}
-            \resumeItem{Implementación de categorización agéntica para transacciones entrantes usando Agents as a Tool.}
-            \resumeItem{Filtrado inteligente de transacciones y paneles de analítica.}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
 \vspace{-8pt}
 %-----------EDUCACIÓN-----------
 \section{\Large Educación}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Universidad Autónoma de Madrid}{Sep. 2019 -- Junio 2023}
+      {Universidad Autónoma de Madrid}{sept. 2019 -- jun. 2023}
       {Grado en Ingeniería Informática}{Madrid, España}
   \resumeSubHeadingListEnd
 \vspace{-4pt}
 %----------- HABILIDADES-----------
-\section{\Large Habilidades}
+\section{\Large Competencias técnicas}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Lenguajes de programación}{: JavaScript/TypeScript, ecosistema Node, HTML/CSS, SQL, Shell Scripting, Python} \\
+     \textbf{Lenguajes de programación}{: JavaScript/TypeScript, ecosistema Node.js, HTML/CSS, SQL, Shell/Bash, Python} \\
      \textbf{Frameworks/Librerías}{: React, Express, Fastify, Nest.js, Redis, Redux, Next.js, Vue, TailwindCSS} \\
-     \textbf{Developer tools}{: Neovim, NixOS/Linux, Git, Jira, Confluence, Bitbucket, AWS, CI/CD tools, Figma, Docker} \\
-     \textbf{Idiomas}{: Español (nativo), Inglés (C1)} \\
+     \textbf{Desarrollo asistido por IA}{: Claude Code, OpenCode} \\
+     \textbf{Herramientas de desarrollo}{: Neovim, NixOS/Linux, Git, AWS, CI/CD, Docker} \\
+     \textbf{Idiomas}{: español (nativo), inglés (C1)} \\
     }}
  \end{itemize}
 \end{document}

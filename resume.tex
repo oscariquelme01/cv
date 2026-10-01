@@ -100,6 +100,17 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumeContractHeading}[2]{
+    \vspace{4pt}
+    \hspace{0.3in}\begin{tabular*}{0.95\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeContractItem}[1]{\item\small{#1}}
+\newcommand{\resumeContractItemListStart}{\begin{itemize}[leftmargin=0.6in, rightmargin=0.1in, nosep]}
+\newcommand{\resumeContractItemListEnd}{\end{itemize}\vspace{-1pt}}
+
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
@@ -107,7 +118,7 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0pt, parsep=0pt, topsep=2pt]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
@@ -136,20 +147,39 @@
 \section{\Large Experience}
   \resumeSubHeadingListStart
 
-    % YOUSHIFT
+    % INDEPENDENT CONTRACTS
     \resumeSubheading
-      {Youshift - YCombinator W25}{March 2026 -- Current date}
-      {Senior Full Stack Developer $|$ TypeScript, Node.js, Vue, Nuxt, TypeORM, Nest.js}{Madrid, Spain}
-      \resumeItemListStart
-        \resumeItem{Worked on building Agents as a Tool to automate user centric workflows}
-        \resumeItem{Integrated with Intercom for customer support}
-        \resumeItem{Implemented and documented an API orthogonal to the tRPC communication for third party integrations}
-        \resumeItem{Redesigned admin tools to optimize business operations and groups control}
-      \resumeItemListEnd
+      {Independent Full Stack Engineer}{February 2023 -- Present}
+      {Self-employed $|$ Selected contract engagements}{Remote}
 
-    % ETHERNODES
+      \resumeContractHeading
+          {\textbf{MasOrange} $|$ \emph{N3 Full Stack Developer}}{December 2025 -- Present}
+      \resumeContractItemListStart
+        \resumeContractItem{Provided Level 3 support and resolved production incidents across a broad microservice environment.}
+        \resumeContractItem{Developed internal solutions to streamline fault-management team operations.}
+        \resumeContractItem{Refactored and secured a module responsible for highly sensitive access controls.}
+        \resumeContractItem{Implemented automated backups for sensitive databases modified by multiple microservices.}
+      \resumeContractItemListEnd
+
+      \resumeContractHeading
+          {\textbf{YouShift - Y Combinator W25} $|$ \emph{Founding Full Stack Engineer}}{March 2026 -- June 2026}
+      \resumeContractItemListStart
+        \resumeContractItem{Implemented OAuth 2.0 integrations for Microsoft and Salesforce and integrated Intercom into customer-support workflows.}
+        \resumeContractItem{Designed and documented an external API alongside the internal tRPC API for third-party integrations.}
+        \resumeContractItem{Redesigned administration tools supporting business operations and group management.}
+      \resumeContractItemListEnd
+
+      \resumeContractHeading
+          {\textbf{Infonis S.L.} $|$ \emph{Full Stack Developer}}{February 2023 -- August 2024}
+      \resumeContractItemListStart
+        \resumeContractItem{Built internal reporting and CRM administration tools with React and .NET, replacing SAP Crystal Reports workflows.}
+        \resumeContractItem{Configured Microsoft Active Directory SSO to standardize authentication across multiple products.}
+        \resumeContractItem{Migrated a React 16 application from class components to React 18 functional components and modernized its dependencies and build tooling.}
+      \resumeContractItemListEnd
+
+    % ALPHAGROWTH / ETHERNODES
     \resumeSubheading
-      {Ethernodes - Alphagrowth}{October 2025 -- March 2026}
+      {AlphaGrowth - Ethernodes}{October 2025 -- March 2026}
       {Senior Full Stack Developer $|$ TypeScript, Node.js, Vue, Nuxt, TypeORM, Nest.js}{Madrid, Spain}
       \resumeItemListStart
         \resumeItem{Implemented 2FA and additional security measures to harden authentication and protect user accounts}
@@ -158,57 +188,29 @@
         \resumeItem{Redesigned the frontend with a modern, polished UI to improve user experience and engagement}
       \resumeItemListEnd
 
-    % CAJA RURAL
+    % SERQUO / CAJA RURAL
     \resumeSubheading
-      {RSI - Caja Rural Bank}{May 2025 -- August 2025}
-      {Senior Full stack Developer $|$ React, Typescript, Node, Vue, Electron}{Madrid, Spain}
+      {Serquo - Consultant for RSI / Caja Rural}{May 2025 -- August 2025}
+      {Senior Full Stack Developer $|$ React, TypeScript, Node.js, Vue, Electron}{Madrid, Spain}
       \resumeItemListStart
-      \resumeItem{Implemented the new Spanish legislation for accessibility in ATMs using windows Voice API, Electron and Typescript, React and Vue}
-      \resumeItem{Implemented a new module to handle PAN obfuscation and comply with PCI in Typescript and Node}
-    \resumeItemListEnd
+        \resumeItem{Implemented Spanish accessibility requirements for ATMs using the Windows Voice API, Electron, TypeScript, and React.}
+        \resumeItem{Developed PCI-compliant logging and PAN obfuscation modules in TypeScript and Node.js.}
+      \resumeItemListEnd
 
     % ORENES
     \resumeSubheading
-      {Orenes Group}{September 2022 -- May 2025}
-      {Full Stack Developer $|$  React, Typescript, Node, Express, Vue, Java, Microservices}{Madrid, Spain}
+      {Orenes Group}{October 2022 -- May 2025}
+      {Full Stack Developer $|$ React, TypeScript, Node.js, Express, Vue, Java, Microservices}{Madrid, Spain}
       \resumeItemListStart
-        \resumeItem{Designed and developed a new microservices architecture in Typescript (Node and Express) that marginally improved scalability and modularity and eliminated technical debt.}
-        \resumeItem{Developed a service in Typescript (Node and Express) to resolve any type of feature for any slot game, simplifying backend development and maintainability by building a single API for all games.}
-        \resumeItem{Documented all the project through OpenAPI specification and swaggerUI, building a custom yaml engine to allow for imports, modularization and live-reload to improve DX. }
-        \resumeItem{Built frontends and backends for various Slot games in Phaser3, React, Java 17, Springboot, HTML and CSS.}
-        \resumeItem{Refactored the history page for the player's games to a more modern and sophisticated solution using Vue.}
+        \resumeItem{Designed a new microservice architecture and replaced a legacy Java backend with TypeScript and Express, improving modularity and reducing technical debt.}
+        \resumeItem{Built a flexible flow-orchestration API capable of handling feature logic across multiple slot games.}
+        \resumeItem{Integrated the new backend with internal services and added unit and integration tests across its core functionality.}
+        \resumeItem{Created a custom OpenAPI and Swagger UI documentation engine supporting imports, modularization, and live reload.}
+        \resumeItem{Developed frontends and Java backends for multiple slot games, improved the shared Java library, and rebuilt the player game-history experience with Vue.}
       \resumeItemListEnd
-
-    
-    % INFONIS
-    \resumeSubheading
-      {Infonis S.A.}{Feb 2023 -- September 2024}
-      {Freelance Full Stack Developer $|$ React, .NET, Typescript, Node}{Madrid, Spain}
-      \resumeItemListStart
-        \resumeItem{Implemented an internal report generation tool in React and .NET to replace SAP Crystal Reports.}
-        \resumeItem{Configured SSO using Microsoft's Active Directory to standardize login for the various products we offered.}
-        \resumeItem{Updated a massive React project from class based to functional components, updating all the dependencies.}
-        \resumeItem{Rebuilt an internal tool in React to configure and manage the CRM databases and frontends, enabling customization per client.}
-    \resumeItemListEnd
     
   \resumeSubHeadingListEnd
 \vspace{-8pt}
-
-%-----------PROJECTS-----------
-\section{\Large Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{WIMM (Where is my money) - Augmented Financial Dashboard} $|$ \emph{Nest, React, PostgreSQL}}{March 2026}
-          \resumeItemListStart
-            \resumeItem{Built an API that directly connects to any european bank account through a open banking provider.}
-            \resumeItem{Learned to use Shadcn with TailwindCSS design system to create custom reusable components.}
-            \resumeItem{Implemented agentic categorization for incoming transactions using Agents as a Tool.}
-            \resumeItem{Smart filtering for transactions + analytics dashboards.}
-          \resumeItemListEnd
-
-    \resumeSubHeadingListEnd
-\vspace{-8pt}
-
 
 %-----------EDUCATION-----------
 \section{\Large Education}
@@ -226,7 +228,8 @@
     \small{\item{
      \textbf{Programming Languages}{: Javascript/Typescript, Node ecosystem, HTML/CSS, SQL, Shell Scripting, Python} \\
      \textbf{Frameworks/Libs}{: React, Express, Fastify, Nest.js, Redis, Redux, NextJS, Vue, TailwindCSS} \\
-     \textbf{Developer Tools}{: Neovim, NixOS/Linux, Git, Jira, Confluence, Bitbucket, AWS, CI/CD tools, Figma, Docker} \\
+     \textbf{AI-assisted Development}{: Claude Code, OpenCode} \\
+     \textbf{Developer Tools}{: Neovim, NixOS/Linux, Git, AWS, CI/CD, Docker} \\
      \textbf{Languages}{: Spanish (native), English (C1)} \\
     }}
  \end{itemize}
